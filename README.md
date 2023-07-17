@@ -18,3 +18,9 @@ For those who are interested or new users who want to learn about openCV.
     - Video Capture Device
     - Resize Video
     - Mirroring Video Multiple Times
+
+### Tutorial4
+    - Drawing Lines 
+    - Drawing Images
+    - Drawing Circles
+    - Drawing Texts
