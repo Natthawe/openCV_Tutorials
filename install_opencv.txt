@@ -1,0 +1,9 @@
+pip install opencv-python
+
+OR
+
+python -m pip install opencv-python
+
+OR
+
+python3 -m pip install opencv-python
