@@ -17,8 +17,8 @@ img = cv2.imread('assets/ocean.jpg', -1) #(427, 640, 3)
 #         img[i][j] = [random.randint(0,255), random.randint(0,255), random.randint(0,255)]
 
 
-tag = img[80:180, 360:460] #img[coppy rows(y) desired pixel , coppy column(x) desired pixel]
-img[0:100, 0:100] = tag #[rows(y), column(x)]
+tag = img[80:180, 360:460] #img[copying rows(y) desired pixel , copying column(x) desired pixel]
+img[0:100, 0:100] = tag #[pasting rows(y), pasting column(x)]
 
 cv2.imshow('Frame', img)        
 cv2.waitKey(0)
