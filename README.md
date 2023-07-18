@@ -29,3 +29,7 @@ For those who are interested or new users who want to learn about openCV.
     - Convert Color
     - Detection Color
 
+### Tutorial6
+    - Circle Detection
+
+
