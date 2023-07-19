@@ -30,6 +30,7 @@ while True:
 
     # draw contours around black line
     contours, hierarchy = cv2.findContours(mask, 1, cv2.CHAIN_APPROX_NONE)
+    cv2.drawContours(frame, contours, -1, (0, 255, 0), 5)  
 
     # find black line max Area
     if len(contours) > 0:
@@ -64,7 +65,6 @@ while True:
         print("Don't see the line")
 
 
-    cv2.drawContours(frame, contours, -1, (0, 255, 0), 5)  
     cv2.drawContours(frame, c, -1, (0,0,255), 3)  
     cv2.imshow("MASK", mask)
     cv2.imshow("FRAME", frame)
