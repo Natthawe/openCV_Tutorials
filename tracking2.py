@@ -10,7 +10,8 @@ font=cv2.FONT_HERSHEY_SIMPLEX
 height=1.5
 weight=3
 myColor=(0,0,255)
-cam = cv2.VideoCapture('/dev/video2')
+# cam = cv2.VideoCapture('/dev/video2')
+cam = cv2.VideoCapture(0)
 
  
 def onTrack1(val):
@@ -40,12 +41,12 @@ def onTrack6(val):
  
 cv2.namedWindow('myTracker')
  
-cv2.createTrackbar('Hue Low','myTracker',10,179,onTrack1)
-cv2.createTrackbar('Hue High','myTracker',20,179,onTrack2)
-cv2.createTrackbar('Sat Low','myTracker',100,255,onTrack3)
-cv2.createTrackbar('Sat High','myTracker',2555,255,onTrack4)
-cv2.createTrackbar('Val Low','myTracker',100,255,onTrack5)
-cv2.createTrackbar('Val High','myTracker',255,255,onTrack6)
+cv2.createTrackbar('Hue Low','myTracker',1,179,onTrack1)
+cv2.createTrackbar('Hue High','myTracker',179,179,onTrack2)
+cv2.createTrackbar('Sat Low','myTracker',1,255,onTrack3)
+cv2.createTrackbar('Sat High','myTracker',255,255,onTrack4)
+cv2.createTrackbar('Val Low','myTracker',1,255,onTrack5)
+cv2.createTrackbar('Val High','myTracker',112,255,onTrack6)
  
  
 while True:
